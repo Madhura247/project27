@@ -15,11 +15,11 @@ class Rope {
 
     display() {
         
-        var pointA = this.slingshot.bodyA.position;
-        var pointB = this.slingshot.bodyB.position;
+        var pointA = this.rope.bodyA.position;
+        var pointB = this.rope.bodyB.position;
 
-        strokeWeight (4);
-        line (pointA.x, pointA.y, pointB.x, pointB.y);
+        strokeWeight(2);
+        line (pointA.x, pointA.y - this.offsetY, pointB.x + this.offsetX, pointB.y);
 
     }
     }
