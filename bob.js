@@ -11,7 +11,7 @@ class Bob {
        this.y = y;
        this.r = r;
 
-       this.body = Bodies.circle(x, y, r/2, options);
+       this.body = Bodies.circle(x, y, r, options);
        
        World.add(world, this.body);
    }
@@ -26,7 +26,7 @@ class Bob {
    ellipseMode(RADIUS);
    fill ("maroon")
    stroke("black");
-   ellipse(0, 0,this.r);
+   ellipse(0, 0,this.r,this.r);
    pop();
    }
 
